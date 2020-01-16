@@ -14,13 +14,13 @@
   import Contact from '../components/Contact';
 
   export default {
-  components: {
-    Header,
-    About,
-    Skills,
-    Contact
+    components: {
+      Header,
+      About,
+      Skills,
+      Contact
+    }
   }
-}
 </script>
 
 <style>
