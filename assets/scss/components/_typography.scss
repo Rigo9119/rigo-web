@@ -34,10 +34,9 @@
 
 // 2. Paragraph styles
 .paragraph {
-  &--1 {
-    @include font-size(23);
-    margin-bottom: 20px;
-  }
+  letter-spacing: 2px;
+  line-height: 1.4;
+  @include font-size(20);
 }
 
 // 3. Link styles
@@ -55,4 +54,10 @@
       text-decoration: none;
     }
   }
+}
+
+.title {
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  @include font-size(28);
 }
