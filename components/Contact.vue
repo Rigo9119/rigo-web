@@ -7,7 +7,6 @@
       <div class="contact__menu">
         <a href="" class="contact__menu__item">LinkedIn</a>
         <a href="" class="contact__menu__item">Glassdor</a>
-        <a href="" class="contact__menu__item">Github</a>
       </div>
     </div>
 </template>
@@ -21,6 +20,7 @@
     background: $monza;
     display: flex;
     flex-flow: column nowrap;
+    height: 90vh;
     justify-content: space-between;
     width: 100vw;
 
@@ -41,9 +41,20 @@
       width: 100%;
 
       &__item {
+        align-self: center;
         color: $oslo-gray;
         margin-bottom: 60px;
-        @include font-size(20)
+        padding: 18px 28px;
+        @include font-size(20);
+
+        @include from(desktop) {
+          margin-bottom: 0;
+        }
+
+        &:hover {
+          background: $oslo-gray;
+          color: $monza;
+        }
       }
     }
   }

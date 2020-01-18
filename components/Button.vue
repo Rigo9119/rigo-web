@@ -1,11 +1,16 @@
 <template>
-  <button class="button">{{ text }}</button>
+  <nuxt-link class="button" :to="to">{{ text }}</nuxt-link>
 </template>
 
 <script>
   export default {
     props: {
       text: {
+        type: String,
+        default: ''
+      },
+
+      to: {
         type: String,
         default: ''
       }

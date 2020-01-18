@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Header />
-    <About />
-    <Skills />
-    <Contact />
+    <div class="body">
+      <About />
+      <Skills />
+      <Contact />
+    </div>
   </div>
 </template>
 
@@ -14,6 +15,7 @@
   import Contact from '../components/Contact';
 
   export default {
+    layout: 'default',
     components: {
       Header,
       About,
@@ -23,6 +25,6 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
 </style>
