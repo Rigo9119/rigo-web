@@ -1,11 +1,18 @@
 <template>
-
+  <div class="body">
+    <AboutPg />
+  </div>
 </template>
 
 <script>
-    export default {
-        layout: 'default'
-    }
+  import AboutPg from "../components/AboutPg";
+
+  export default {
+      layout: 'default',
+      components: {
+        AboutPg
+      }
+  }
 </script>
 
 <style lang="scss">

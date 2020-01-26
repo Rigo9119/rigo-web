@@ -6,20 +6,25 @@
     <p class="skills__paragraph paragraph">
       Thanks to that I have obtained skills in HTML, CSS, Javascript and some JS frameworks like React and Vue
       (this website was built with nuxt.js), also I have worked with Scrum methodologies and I like working in a team
-      as I believe it helps me learn new things.
+      as I believe it helps me to learn new things.
     </p>
-    <Button text="See more" class="skills__button" to="Skills"/>
+    <p class="skills__paragraph paragraph">
+      Git is part of my workflow and is something that im trying to learn more, currently i like to use some of my
+      free time to learn more Javascript and it's frameworks, graphql and Node js, i know a little bit of Ruby but to
+      be honest I dont use that much as right know I want to be a Javascript developer.
+    </p>
+    <Button text="Go back" class="skills__button" to="/"/>
   </div>
 </template>
 
 <script>
-  import Button from '../components/Button'
+    import Button from "./Button";
 
-  export default  {
-    components: {
-      Button
+    export default {
+      components: {
+        Button
+      }
     }
-  }
 </script>
 
 <style lang="scss">

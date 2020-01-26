@@ -32,6 +32,9 @@
         @include font-size(32);
         width: 100%;
 
+        &__symbol {
+          animation: pulse 0.7s infinite;
+        }
       }
     }
 </style>

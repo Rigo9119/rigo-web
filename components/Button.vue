@@ -25,5 +25,9 @@
     outline: none;
     text-decoration: none;
     @include font-size(20);
+
+    &:hover {
+      animation: moveTop 0.7s forwards;
+    }
   }
 </style>
