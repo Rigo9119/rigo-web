@@ -2,7 +2,7 @@
     <div class="contact g-padding">
       <h2 class="contact__title title">_CONTACT</h2>
       <P class="contact__paragraph paragraph">
-        As I mentioned before I am currently located in Bogotá Colombia, but you can contact me by the following
+        As I mentioned before I am currently located in Bogotá Colombia, but you can contact me by the following pages:
       </P>
       <div class="contact__menu">
         <a href="" class="contact__menu__item">LinkedIn</a>
@@ -25,11 +25,11 @@
     width: 100vw;
 
     &__title {
-      color: $oslo-gray;
+      color: $white;
     }
 
     &__paragraph {
-      color: $oslo-gray;
+      color: $white;
     }
 
     &__menu {
@@ -42,7 +42,7 @@
 
       &__item {
         align-self: center;
-        color: $oslo-gray;
+        color: $white;
         margin-bottom: 60px;
         padding: 18px 28px;
         @include font-size(20);
@@ -52,7 +52,7 @@
         }
 
         &:hover {
-          background: $oslo-gray;
+          background: $white;
           color: $monza;
         }
       }
