@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Header />
-    <About />
-    <Skills />
-    <Contact />
+    <div class="body">
+      <About />
+      <Skills />
+      <Contact />
+    </div>
   </div>
 </template>
 
@@ -14,15 +15,16 @@
   import Contact from '../components/Contact';
 
   export default {
-  components: {
-    Header,
-    About,
-    Skills,
-    Contact
+    layout: 'default',
+    components: {
+      Header,
+      About,
+      Skills,
+      Contact
+    }
   }
-}
 </script>
 
-<style>
+<style lang="scss">
 
 </style>
