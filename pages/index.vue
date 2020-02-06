@@ -9,7 +9,6 @@
 </template>
 
 <script>
-  import Header from '../components/Header';
   import About from '../components/About';
   import Skills from '../components/Skills';
   import Contact from '../components/Contact';
@@ -17,7 +16,6 @@
   export default {
     layout: 'default',
     components: {
-      Header,
       About,
       Skills,
       Contact
