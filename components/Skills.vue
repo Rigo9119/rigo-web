@@ -1,22 +1,26 @@
 <template>
   <div class="skills g-padding">
-    <h2 class="skills__title title">
-      _SKILLS AND KNOWLEDGE
-    </h2>
-    <p class="skills__paragraph paragraph">
-      Thanks to that I have obtained skills in HTML, CSS, Javascript and some JS frameworks like React and Vue
-      (this website was built with nuxt.js), also I have worked with Scrum methodologies and I like working in a team
-      as I believe it helps me learn new things.
-    </p>
+    <Title
+      class="skills__title title"
+      title="_SKILLS AND KNOWLEDGE"/>
+    <Paragraph
+      class="skills__paragraph paragraph"
+      paragraph="Thanks to that I have obtained skills in HTML, CSS, Javascript and some JS frameworks like React and Vue
+        (this website was built with nuxt.js), also I have worked with Scrum methodologies and I like working in a team
+        as I believe it helps me learn new things."/>
     <Button text="See more" class="skills__button" to="Skills"/>
   </div>
 </template>
 
 <script>
+  import Title from './Title'
+  import Paragraph from "./Paragraph";
   import Button from '../components/Button'
 
   export default  {
     components: {
+      Title,
+      Paragraph,
       Button
     }
   }
