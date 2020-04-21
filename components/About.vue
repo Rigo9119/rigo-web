@@ -5,28 +5,21 @@
         title="_ABOUT ME"/>
       <Paragraph
         class="about__paragraph paragraph"
-        paragraph="
-          I am a front end developer currently located in Bogotá Colombia, I have been working as a web developer for
-          almost two years and a half. Currently I work at Globant as a Web UI dev where I am part of the team that is in
-          charge of remodeling the ESPN website.
-        "/>
-      <p class="about__paragraph paragraph">
-        I speak  <span class="about__paragraph__language">English</span >, a little of
-        <span class="about__paragraph__language">Korean</span> as my wife
-        is from South Korea so I learn just a bit of it, also I speak <span class="about__paragraph__language">
-        Spanish</span> because is my mother tongue.
-      </p>
+        paragraph="I am a front end developer currently located in Bogotá Colombia, I have been working as a web developer for almost two years and a half. Currently I work at Globant as a Web UI developer and I was part of the team that was remodeling and updating the ESPN web application. "/>
+      <Button text="See more" class="about__button" to="About"/>
     </div>
 </template>
 
 <script>
   import Title from "./Title"
   import Paragraph from "./Paragraph";
+  import Button from './Button';
 
   export default  {
     components: {
       Title,
-      Paragraph
+      Paragraph,
+      Button
     }
   }
 </script>
@@ -34,7 +27,6 @@
 <style lang="scss">
   .about {
     align-items: flex-start;
-    background: $black;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -47,11 +39,11 @@
     }
 
     &__title {
-      color: $white;
+      color: $black;
     }
 
     &__paragraph {
-      color: $white;
+      color: $black;
 
       &__language {
         border-bottom: 1px solid $white;
@@ -64,12 +56,12 @@
 
     &__button {
       align-self: flex-end;
-      border: 1px solid $white;
-      color: $white;
+      border: 1px solid $black;
+      color: $black;
 
       &:hover {
-        background: $white;
-        color: $black;
+        background: $black;
+        color: $white;
       }
     }
   }

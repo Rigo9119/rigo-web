@@ -29,7 +29,6 @@
 <style lang="scss">
   .skills {
     align-items: flex-start;
-    background: $oslo-gray;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -64,7 +63,7 @@
 
       &:hover {
         background: black;
-        color: $oslo-gray;
+        color: $white;
       }
     }
   }

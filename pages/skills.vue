@@ -5,13 +5,14 @@
 </template>
 
 <script>
-    import SkillsPg from "../components/SkillsPg";
-    export default {
-        layout: 'default',
-        components: {
-          SkillsPg
-        }
-    }
+  import SkillsPg from "../components/views/SkillsPg";
+
+  export default {
+      layout: 'default',
+      components: {
+        SkillsPg
+      }
+  }
 </script>
 
 <style lang="scss">

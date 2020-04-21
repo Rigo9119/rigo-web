@@ -7,9 +7,9 @@
 .g-padding {
   padding: 30px;
 
- @include from(desktop) {
-   padding: 60px;
- }
+  @include from(desktop) {
+    padding: 60px;
+  }
 }
 
 // 2. padding top

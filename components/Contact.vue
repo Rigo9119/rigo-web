@@ -17,7 +17,6 @@
 <style lang="scss">
   .contact {
     align-items: flex-start;
-    background: $monza;
     display: flex;
     flex-flow: column nowrap;
     height: 90vh;
@@ -25,11 +24,11 @@
     width: 100vw;
 
     &__title {
-      color: $white;
+      color: $black;
     }
 
     &__paragraph {
-      color: $white;
+      color: $black;
     }
 
     &__menu {
@@ -42,7 +41,7 @@
 
       &__item {
         align-self: center;
-        color: $white;
+        color: $black;
         margin-bottom: 60px;
         padding: 18px 28px;
         @include font-size(20);
