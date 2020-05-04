@@ -1,10 +1,8 @@
 <template>
-  <div>
-    <div class="body">
-      <About />
-      <Skills />
-      <Contact />
-    </div>
+  <div class="body">
+    <About />
+    <Skills />
+    <Contact />
   </div>
 </template>
 

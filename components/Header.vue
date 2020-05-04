@@ -11,8 +11,8 @@
     <nav class="header__nav">
       <nuxt-link class="header__nav__link" to="./about">About</nuxt-link>
       <nuxt-link class="header__nav__link" to="./skills">Skills</nuxt-link>
-      <nuxt-link class="header__nav__link" to="">Portafolio</nuxt-link>
-      <nuxt-link class="header__nav__link" to="">Contact</nuxt-link>
+      <nuxt-link class="header__nav__link" to="./portafolio">Portafolio</nuxt-link>
+      <!--<nuxt-link class="header__nav__link" to="">Contact</nuxt-link>-->
     </nav>
   </div>
 </template>
@@ -63,7 +63,7 @@
         flex-flow: row nowrap;
         justify-content: space-between;
         padding: 6px 3px ;
-        width: 100%;
+        width: 95%;
 
         @include from(desktop) {
           justify-content: flex-end;

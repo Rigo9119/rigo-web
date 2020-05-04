@@ -16,8 +16,6 @@
     }
 </script>
 
-<style lang="scss">
-  .paragraph {
-    color: $white;
-  }
+<style lang="scss" scoped>
+
 </style>
