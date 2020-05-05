@@ -1,86 +1,103 @@
 <template>
   <div class="header">
-    <nuxtLink to="/">
+    <nuxtLink to="/" :class="{ hide: toggle }">
       <h1 class="header__title">
         <span class="header__title__symbol">
-          &#62
+          &#62;
         </span>
         HI I AM RIGO
       </h1>
     </nuxtLink>
-    <nav class="header__nav">
-      <nuxt-link class="header__nav__link" to="./about">About</nuxt-link>
-      <nuxt-link class="header__nav__link" to="./skills">Skills</nuxt-link>
-      <nuxt-link class="header__nav__link" to="./portafolio">Portafolio</nuxt-link>
-      <!--<nuxt-link class="header__nav__link" to="">Contact</nuxt-link>-->
-    </nav>
+    <Nav :class="{ show: toggle }"/>
+    <button class="header__button" :class="{ hide: toggle }" @click="toggle=true">
+      &#60;
+    </button>
+    <button class="header__button hide" :class="{ show: toggle }" @click="toggle=false">
+      &#62;
+    </button>
   </div>
 </template>
 
 <script>
-  export  default {
+import Nav from './Nav'
 
+export  default {
+  components: {
+    Nav
+  },
+
+  data () {
+    return {
+      toggle: false
+    }
+  },
+
+  methods: {
+    toggleMenu: (event) => {
+      this.toggle = !this.toggle
+    }
   }
+}
 </script>
 
 <style lang="scss">
-    .header {
-      align-items: flex-start;
-      background: $white;
-      display: flex;
-      flex-flow: column nowrap;
-      height: 80px;
-      position: fixed;
+  .header {
+    align-items: center;
+    background: $white;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80px;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    @include from(desktop) {
+
+    }
+
+    &__title {
+      color: $monza;
+      letter-spacing: 0.5px;
+      padding: 15px 10px 6px 10px;
+      @include font-size(22);
       width: 100%;
-      z-index: 1;
 
       @include from(desktop) {
-        flex-flow: row nowrap;
-        justify-content: space-between;
-      }
-
-      &__title {
-        color: $monza;
-        letter-spacing: 0.5px;
-        padding: 15px 10px 6px 10px;
-        @include font-size(22);
+        letter-spacing: 2px;
+        @include font-size(28);
         width: 100%;
-
-        @include from(desktop) {
-          letter-spacing: 2px;
-          @include font-size(28);
-          width: 100%;
-        }
-
-        &__symbol {
-          animation: pulse 0.7s infinite;
-        }
       }
 
-      &__nav {
-        align-items: center;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        padding: 6px 3px ;
-        width: 95%;
-
-        @include from(desktop) {
-          justify-content: flex-end;
-          padding: 20px;
-          width: 40%;
-        }
-
-        &__link {
-          color: $monza;
-          text-align: center;
-          width: 25%;
-          @include font-size(18);
-
-          @include from(desktop) {
-            width: 20%;
-          }
-        }
+      &__symbol {
+        animation: pulse 0.7s infinite;
       }
     }
+
+
+    &__button {
+      align-self: center;
+      background: none;
+      border: none;
+      color: $monza;
+      margin-right: 10px;
+      outline: none;
+      text-align: center;
+      @include font-size(32);
+
+      @include from(desktop) {
+        padding: 15px;
+        display: none;
+      }
+    }
+
+    .hide {
+      display: none;
+    }
+
+    .show {
+      display: flex;
+    }
+  }
+
 </style>
