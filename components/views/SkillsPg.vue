@@ -5,10 +5,7 @@
     </h2>
     <Paragraph
       class="skillspg__paragraph"
-      paragraph="Most of my dev Skills are related to Front End Development but im doing my best and try to learn new things."/>
-    <Paragraph
-      class="skillspg__paragraph"
-      paragraph="Here is a list of my skills:" />
+      paragraph="Most of my dev Skills are related to Front End Development but im doing my best and try to learn new things. Here is a list of my skills:"/>
     <div class="skillspg__wrapper">
       <!-- basic skills -->
       <ul class="skillspg__wrapper__list">
@@ -53,6 +50,8 @@
             {name: 'Graphql (basic)'},
             {name: 'Storybook'},
             {name: 'Styled Components / Emotion Js'},
+            {name: 'Dart (basic)'},
+            {name: 'Flutter (basic)'},
             //{name: 'Ruby (basic)'}
           ]
         }
@@ -78,6 +77,7 @@
 
     &__paragraph {
       padding-top: 10px;
+      width: 100%;
     }
 
     &__wrapper {
